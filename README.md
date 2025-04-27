@@ -1,54 +1,76 @@
-# React + TypeScript + Vite
+# Pokémon Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the Pokémon Generator app! 🎮⚡
 
-Currently, two official plugins are available:
+This app allows you to generate random Pokémon with details like their name, type, HP, abilities, moves, and more. It's built with **React** and **TypeScript**, providing an interactive way to learn more about Pokémon through a fun generator.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **Random Pokémon Generation**: Click the button to generate a random Pokémon.
+- **Pokémon Info**: Displays detailed information such as:
+  - Pokémon Name and Short Name
+  - HP (Hit Points)
+  - Type and Weaknesses
+  - Moves and their details
+  - Images of the Pokémon and its type
+- **Responsive Design**: Fully responsive layout that adapts to all screen sizes, from desktops to mobile devices.
+- **Pixelated Style**: Retro-inspired pixelated design with animations for smooth transitions.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Tech Stack
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **React**: JavaScript library for building user interfaces.
+- **TypeScript**: Superset of JavaScript for type safety.
+- **CSS**: Styled components using plain CSS for simplicity and flexibility.
+- **PokeAPI**: Fetches random Pokémon data using the PokeAPI.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Installation
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+To run this project locally, follow these steps:
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/loid-lab/poke-gen.git
+   cd poke-gen
+   ```
+
+2. **Install dependencies**:
+   Make sure you have [Node.js](https://nodejs.org/) installed, then run:
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server**:
+   ```bash
+   npm start
+   ```
+
+   This will open the app in your browser at [http://localhost:3000](http://localhost:3000).
+
+## Usage
+
+- Click the **Generate Random Pokémon** button to generate a random Pokémon.
+- View detailed information about the Pokémon, including its type, abilities, and moves.
+- The design is fully responsive and optimized for both desktop and mobile devices.
+
+## Contributing
+
+Feel free to open issues and pull requests to contribute to the development of the Pokémon Generator app! 🚀
+
+### Steps to contribute:
+1. Fork the repo.
+2. Create a new branch (`git checkout -b feature-name`).
+3. Make your changes.
+4. Commit your changes (`git commit -am 'Add some feature'`).
+5. Push to the branch (`git push origin feature-name`).
+6. Open a pull request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgements
+
+- Pokémon and its characters are trademarks of **The Pokémon Company**.
+- Special thanks to the **PokeAPI** for providing the data.
+
+Enjoy your Pokémon adventure! 🎉⚡
