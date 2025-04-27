@@ -1,0 +1,63 @@
+/* index.css */
+
+/* Pixel font for the retro, gaming effect */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+  font-family: 'Press Start 2P', cursive;
+  background-color: #f2f2f2;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+}
+
+h1 {
+  font-size: 3rem;
+  color: #ffcc00;
+  text-align: center;
+  margin-top: 50px;
+}
+
+button {
+  background-color: #ffcc00;
+  color: white;
+  border: 3px solid #ff9900;
+  border-radius: 12px;
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff9900;
+  transform: scale(1.1);
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Pixelated animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem; /* Smaller heading on mobile */
+    margin-bottom: 20px;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}

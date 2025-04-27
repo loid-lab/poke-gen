@@ -1,0 +1,134 @@
+/* PokemonGenerator.css */
+
+/* Wrapper for the component */
+.pokemon-generator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    max-width: 450px;
+    margin: 20px;
+    text-align: center;
+    animation: fadeIn 2s ease-out;
+    flex: 1;
+    justify-content: center;
+  }
+  
+  /* Full-height wrapper for the body to fill screen */
+  body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .pokemon-generator img {
+    max-width: 150px;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    animation: fadeIn 2s ease-out;
+  }
+  
+  .pokemon-generator .pokemon-stats {
+    margin-top: 15px;
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .pokemon-generator .pokemon-stats p {
+    margin: 8px 0;
+  }
+  
+  .pokemon-generator .pokemon-stats strong {
+    color: #ffcc00;
+  }
+  
+  .pokemon-generator .icons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 15px;
+  }
+  
+  .pokemon-generator .icons img {
+    max-width: 35px;
+    max-height: 35px;
+    border-radius: 50%;
+  }
+  
+  .pokemon-generator ul {
+    margin-top: 20px;
+    padding: 0;
+  }
+  
+  .pokemon-generator ul li {
+    background-color: #f8f8f8;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .pokemon-generator ul li strong {
+    color: #ffcc00;
+  }
+  
+  /* Description text styling */
+  .pokemon-generator .pokemon-description {
+    margin-top: 15px;
+    font-style: italic;
+    color: #666;
+  }
+  
+  /* Button for generating new Pokémon */
+  .pokemon-generator button {
+    padding: 12px 25px;
+    background-color: #ffcc00;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .pokemon-generator button:hover {
+    background-color: #ff9900;
+    transform: scale(1.1);
+  }
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .pokemon-generator {
+      padding: 20px;
+      max-width: 90%;
+      width: 100%;
+    }
+  
+    .pokemon-generator img {
+      max-width: 100px;
+      max-height: 100px;
+    }
+  
+    .pokemon-generator button {
+      padding: 10px 20px;
+      font-size: 1rem;
+    }
+  
+    h1 {
+      font-size: 2.5rem; /* Smaller heading */
+    }
+  
+    .pokemon-generator ul li {
+      font-size: 0.9rem; /* Smaller font size for mobile */
+    }
+  }

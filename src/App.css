@@ -1,0 +1,81 @@
+/* App.css */
+
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Press Start 2P', cursive;
+  background-color: #e5e5e5;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #ffcc00;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  animation: fadeIn 1.5s ease-out;
+  margin-bottom: 40px; /* Adjust for spacing */
+}
+
+button {
+  background-color: #ffcc00; /* Pokéball yellow */
+  color: #fff;
+  border: 3px solid #ff9900;
+  border-radius: 12px;
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+  background-color: #ff9900;
+  transform: scale(1.1);
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Smooth fade-in effect */
+.fade-in {
+  animation: fadeIn 2s ease-out;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem; /* Smaller heading on mobile */
+    margin-bottom: 20px;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
