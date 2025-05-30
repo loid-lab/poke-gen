@@ -21,16 +21,6 @@ body {
   flex-direction: column;
 }
 
-h1 {
-  font-size: 3rem;
-  color: #ffcc00;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  animation: fadeIn 1.5s ease-out;
-  margin-bottom: 40px; /* Adjust for spacing */
-}
-
 button {
   background-color: #ffcc00; /* Pokéball yellow */
   color: #fff;

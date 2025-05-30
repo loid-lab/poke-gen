@@ -13,13 +13,6 @@ body {
   height: 100vh; /* Full viewport height */
 }
 
-h1 {
-  font-size: 3rem;
-  color: #ffcc00;
-  text-align: center;
-  margin-top: 50px;
-}
-
 button {
   background-color: #ffcc00;
   color: white;
